@@ -93,7 +93,7 @@ class App extends Component {
       this.state.input)
       .then(response => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('http://localhost:3000/findface', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
